@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Meeting</title>
+</head>
+<body>
+  <h1>Real-Time Meeting</h1>
+  <video id="localVideo" autoplay muted></video>
+  <div id="remoteVideos"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="https://cdn.rawgit.com/webrtc/rtcpeerconnection/v1.5.5/rtcpeerconnection.bundle.js"></script>
+  <script src="/public/script.js"></script>
+</body>
+</html>

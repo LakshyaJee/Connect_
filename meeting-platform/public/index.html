@@ -14,5 +14,11 @@
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
   <script src="https://cdn.rawgit.com/webrtc/rtcpeerconnection/v1.5.5/rtcpeerconnection.bundle.js"></script>
   <script src="/public/script.js"></script>
+  <form action="/create-meeting" method="post">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+    <button type="submit">Create Meeting</button>
+  </form>
+  
 </body>
 </html>

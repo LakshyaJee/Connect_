@@ -2,6 +2,9 @@ const express = require('express');
 const http = require('https://lakshyajee.github.io/Connect_/');
 const socketIo = require('socket.io');
 const uuid = require('uuid');
+// Add these lines to handle POST requests
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const app = express();
 const server = http.createServer(app);
